@@ -1,0 +1,9 @@
+
+{
+    "name": "js-lunch-1",
+    "description": "JavaScript Lunch and Learn",
+    "version": "0.0.1",
+    "main": "index.js",
+    "devDependencies": {
+    }
+}
