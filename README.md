@@ -15,6 +15,14 @@
 - Array Functions
 
 ## Template Literals
+- Intro/Supporting context
+- Why?
+- Old Way
+- New Way
+- Is there an equivalent in C#/Java?
+- Deep Dive if necessary
+- Where will I see this?
+- Q & A
 
 ## Object Destructuring
 
