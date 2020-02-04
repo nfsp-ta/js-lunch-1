@@ -17,16 +17,6 @@
 - const/let vs. var
 - Array Functions
 
-## const/let vs. var
-- Intro/Supporting context
-- Why?
-- Old Way
-- New Way
-- Is there an equivalent in C#/Java?
-- Deep Dive if necessary
-- Where will I see this?
-- Q & A
-
 ## Arrow Function
 - Intro/Supporting context
 - Why?
