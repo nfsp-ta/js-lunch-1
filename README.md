@@ -1,4 +1,7 @@
-# JavaScript Lunch &amp; Learn (Part 1)
+# JavaScript Lunch &amp; Learn
+
+
+# Part 1
 
 # Topics
 - Template Literals
@@ -14,7 +17,7 @@
 - const/let vs. var
 - Array Functions
 
-## Template Literals
+## const/let vs. var
 - Intro/Supporting context
 - Why?
 - Old Way
@@ -24,24 +27,92 @@
 - Where will I see this?
 - Q & A
 
-## Object Destructuring
-
-## Rest/Spread
-
 ## Arrow Function
+- Intro/Supporting context
+- Why?
+- Old Way
+- New Way
+- Is there an equivalent in C#/Java?
+- Deep Dive
+- Q & A
 
-## Promises & Async/await
+## Template Literals
+- Intro/Supporting context
+- Why?
+- Old Way
+- New Way
+- Is there an equivalent in C#/Java?
+- Deep Dive if necessary
+  - Tag Template Literal
+- Where will I see this?
+- Q & A
+
+## Object Destructuring | Rest/Spread
+- Intro/Supporting context
+- Why?
+- Old Way
+- New Way
+- Is there an equivalent in C#/Java?
+- Q & A
 
 ## JS modules
-
-## Tag Template Literal (?)
-
-## Generator Functions (?)
-
-## Classes
+- Intro/Supporting context
+- Why?
+- Old Way
+- New Way
+- Is there an equivalent in C#/Java?
+- Deep Dive if necessary
+- Where will I see this?
+- Q & A
 
 ## Default Parameters
+- Intro/Supporting context
+- Why?
+- Old Way
+- New Way
+- Is there an equivalent in C#/Java?
+- Deep Dive if necessary
+- Where will I see this?
+- Q & A
 
-## const/let vs. var
+# Part 2
 
 ## Array Functions
+- Intro/Supporting context
+- Why?
+- Old Way
+- New Way
+- Is there an equivalent in C#/Java?
+- Deep Dive if necessary
+- Where will I see this?
+- Q & A
+
+## Promises & Async/await
+- Intro/Supporting context
+- Why?
+- Old Way
+- New Way
+- Is there an equivalent in C#/Java?
+- Deep Dive
+- Q & A
+
+## Generator Functions (?)
+- Intro/Supporting context
+- Why?
+- Old Way
+- New Way
+- Is there an equivalent in C#/Java?
+- Deep Dive if necessary
+- Where will I see this?
+- Q & A
+
+## Classes
+- Intro/Supporting context
+- Why?
+- Old Way
+- New Way
+- Is there an equivalent in C#/Java?
+- Deep Dive if necessary
+- Where will I see this?
+- Q & A
+
