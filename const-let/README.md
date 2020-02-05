@@ -7,11 +7,11 @@ ES5 (2009) introduced two new means of declaring variables, `let` and `const`
 
 Traditionally JS allowed two ways of declaring variables
 - Implicit assignment 
-  ```
-  x = 1; \\ very bad do not do this ever
+  ```javascript
+  x = 1; // very bad do not do this ever
   ``` 
 - Explicit declaration using var
-  ```
+  ```javascript
   var x = 1;
   ```
 
@@ -36,10 +36,10 @@ Both of these approaches have differing scoping rules, all of which involve pote
 
 ## Demo
 
-  ```
+  ```javascript
   // Javascript examples that show var vs. let and how var can lead to unexpected results
   ```
-  ```
+  ```javascript
   // Javascript example that more often than not, const can be used.
   ```
 
