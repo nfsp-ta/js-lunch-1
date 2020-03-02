@@ -1,5 +1,9 @@
 import { out } from "./lib.js";
 
+import { badVar } from "./const-let";
+
+import { runArrowFunctionExample } from "./arrow-functions";
+
 var h = "Hello";
 var w = "world";
 
@@ -13,3 +17,9 @@ var testObject = {
 };
 
 out(testObject);
+
+badVar();
+
+// goodLet();
+
+runArrowFunctionExample();
