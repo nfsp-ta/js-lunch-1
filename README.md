@@ -1,5 +1,11 @@
 # JavaScript Lunch &amp; Learn -  Part 1
 
+## Agenda
+- Introduction ~1 minute
+- 6 Topics ~8 minutes each (~48 minutes total)
+- Quick Review ~1 minute
+- Open Discussion ~10 minutes
+
 ## Topics
 - [`const`/`let` vs. `var`](const-let/README.md)
 - [Arrow Functions](arrow-functions/README.md)
@@ -13,7 +19,7 @@
 - The Old Way
 - Why is `[new feature]` Needed?
 - The New Way
+- Where will I see this?
 - Is there an equivalent in C#/Java?
 - Demo / Deep Dive
-- Where will I see this?
 - Q & A
