@@ -15,11 +15,12 @@
 - [Default Parameters](default-parameters/README.md)
 
 ## Discussion Format
-- Intro/Supporting context
+- Intro/Supporting Context
 - The Old Way
 - Why is `[new feature]` Needed?
 - The New Way
-- Where will I see this?
 - Is there an equivalent in C#/Java?
 - Demo / Deep Dive
+- Where will I see this?
+- Potential Pitfalls
 - Q & A
