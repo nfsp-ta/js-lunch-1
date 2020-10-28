@@ -1,11 +1,27 @@
 body {
-    background-color: #1C2022;
+  background-color: #1c2022;
+  font-family: Tahoma, Geneva, sans-serif;
 }
 
 .alert {
-    margin: 12px;
-    padding: 12px;
-    border-radius: 12px;
-    background-color:#343a40;
-    color: #17a2b8;
+  margin: 12px;
+  padding: 12px;
+  border-radius: 4px;
+  background-color: #343a40;
+  color: #17a2b8;
+}
+
+.btn {
+  display: inline-block;
+  margin: 3px;
+  padding: 6px 12px;
+  border-radius: 16px;
+  background-color: #262a2e;
+  color: #17a2b8;
+  border: 1px solid #17a2b8;
+}
+
+.btn:hover {
+  background-color: #444d57;
+  cursor: pointer;
 }
