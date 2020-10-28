@@ -1,4 +1,4 @@
 import { demo } from './const-let/demo';
-import "./styles.css";
+import './styles.css';
 
 demo();
