@@ -1,4 +1,2 @@
-import { demo } from './const-let/demo';
-import './styles.css';
-
-demo();
+import { out, button } from "../lib.js";
+import "./styles.css";
