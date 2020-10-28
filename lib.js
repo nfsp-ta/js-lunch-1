@@ -14,5 +14,5 @@ export function button(txt, callback) {
   btn.onclick = callback;
   div.appendChild(btn);
   div.className = 'alert';
-  document.getElementById('root').appendChild(btn);
+  document.getElementById('root').appendChild(div);
 }
