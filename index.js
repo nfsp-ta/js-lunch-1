@@ -1,4 +1,4 @@
-import { out } from "./lib.js";
+import { out, button } from "./lib.js";
 import "./styles.css";
 
 var h = "Hello";
@@ -14,3 +14,7 @@ var testObject = {
 };
 
 out(testObject);
+
+for (var i = 1; i <= 5; i++) {
+  button('Test ' + i, function() { alert('you clicked: '+i)});
+}
