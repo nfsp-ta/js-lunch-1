@@ -1,4 +1,4 @@
-import { out, button } from "./lib.js";
+import { out, button } from "../lib.js";
 
 export function demo() {
   for (var i = 1; i <= 5; i++) {
