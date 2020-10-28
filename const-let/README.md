@@ -86,4 +86,19 @@ Both of these approaches have differing scoping rules, all of which involve pote
   out (ary);
   ```
 
+  Unlike C#, variables can be redeclared in an inner scope
+
+  ```javascript
+  let x = 1;
+  let x = 'Hello'; // Can't do this!
+  if (true) {
+    let x = 'Hello'; // but this is fine...
+    out(x);
+  }
+
+  {
+    let x = 'Hello'; // or even this
+  }
+  ```
+
 ## Q & A
