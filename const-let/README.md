@@ -37,14 +37,53 @@ Both of these approaches have differing scoping rules, all of which involve pote
 ## Demo
 
   ```javascript
-  // Javascript examples that show var vs. let and how var can lead to unexpected results
-  ```
-  ```javascript
-  // Javascript example that more often than not, const can be used.
+  // Because var is scoped outside the for loop, it's value is wrong on a callback
+  for (var i = 1; i <= 5; i++) {
+    button('Test ' + i, function() { alert('you clicked: '+i)});
+  }
+
+  // Javascript ignores redeclaration for var, so declaring the same name in an
+  //  inner scope doesn't work as intended.
+  for (var i = 1; i <=3; i++) {
+    out('Outer loop count: ' + i);
+    for (var i = 1; i <=3; i++) {
+      out('Inner loop count: ' + i);
+    }
+  }
+
+  // A var can be used before declared...
+  //  (note: doesn't work right in codesandbox)
+  function test() {
+    console.log(someRandomThing); // This is fine...
+    var someRandomThing = ''; // ...as long as this is here
+  }
   ```
 
 ## Where will I see this?
 
   - Ideally, every time a variable is declared anywhere in javascript.
+
+## Potential Pitfalls
+
+  `const` objects and arrays are not immutable!
+
+  ```javascript
+  const obj = { foo: 'bar' };
+  
+  obj = { foo: 'baz' }; // Can't do this!
+  obj.foo = 'baz'; // but this is fine.
+  
+  out (obj);
+
+  // Also...
+
+  const ary = ['foo','bar'];
+  
+  ary = []; // Can't do this!
+  ary.pop(); // but this is fine.
+  ary[0] = 'baz'; // and this is fine too.
+  
+  out (ary);
+  ```
 
 ## Q & A
