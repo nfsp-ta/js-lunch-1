@@ -72,6 +72,11 @@ function addToCart(name, quantity) {
 const header = `<h1>
                   Hello, ${username}!
                 </h1>`;
+
+// BONUS: Escaping is better!
+const annoying1 = 'She said: "Isn\'t it a nice day!"';
+const annoying1 = "She said: \"Isn't it a nice day!\"";
+const notTooBad = `She said: "Isn't it a nice day!"`;
 ```
 
 ## Is there an equivalent in C#/Java?
@@ -85,9 +90,23 @@ const header = `<h1>
     }
     ```
 
-## Tag Template Literal (How it works)
-  - Tag Template Literal
-
 ## Where will I see this?
 Because of the numerous advantages, Template Literals are very common in modern JavaScript. 
+
+## Potential Pitfalls
+Pretty indentation in the code doesn't produce pretty indentation in the strings.
+
+```javascript
+const header = `<h1>
+                  Hello, ${username}!
+                </h1>`;                
+```
+...produces the string:
+```
+<h1>
+                  Hello, User123!
+                </h1>
+```
+Many times, this doesn't matter, but it's good to keep in mind.
+
 ## Q & A
