@@ -17,25 +17,21 @@ Traditionally JS allowed two ways of declaring variables
   var x = 1;
   ```
 
-Both of these approaches have differing scoping rules, all of which involve potentially hoisting the variable into a higher scope.
-
-- Implicit assignments are effectively global, they are declared in the outer most scope.
-- Explicit assignments are scoped to the containing function _NOT_ the enclosing block.
-
 ## Why are `const` and `let` needed?
 
-Traditional scoping rules are non-intuitive to developers whether they are a novice or an expert in some other language because most languages support block scoping and do not implicitly hoist the variables. This can also lead to sloppy programming practices where the same variable is inadvertently used.
+`var`s are scoped to the containing function _NOT_ the enclosing block. At best, this is confusing; at worst, it can cause bugs.
+The scoping rules of `var` are non-intuitive to developers because most languages support block scoping and do not implicitly hoist the variables. Additionally, `var` can be redeclared without raising an error, which could lead to all sorts of weirdness.
 
 ## The New Way
 
-Unlike implicit assignment, or explicit `var` assignment, both `let` and `const` are lexically and block scoped.
+Unlike `var` assignment, both `let` and `const` are lexically and block scoped.
 
 - `let` declares a variable that is available only after the point of declaration and until the current code block ends.
-- `const` declares a constant value with the same scoping rules as `let`.
+- `const` has the same scoping rules, but declares a constant which can't be changed after assignment. (Also, you must assign at declaration)
 
 ## Is there an equivalent in C#/Java?
 
-C# and Java variable or constant declarations are always lexically and block scoped.
+C# and Java variable or constant declarations are always lexically and block scoped, thus `let` is more like C#'s `var` than `var` is :D
 
 ## Demo
 
@@ -66,7 +62,7 @@ function test() {
 
 ## Where will I see this?
 
-- Ideally, every time a variable is declared anywhere in javascript.
+- Ideally, every time a variable is declared anywhere in javascript. (Down with `var`!)
 
 ## Potential Pitfalls
 
