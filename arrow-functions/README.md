@@ -1,10 +1,10 @@
 # Arrow Functions
 ## Intro
-Since its inception JavaScript has supported functions as first-class objects, though this has improved over the years to enhace security and enable better toll support.
+Since its inception JavaScript has supported functions as first-class objects, though this has improved over the years to enhance security and enable better tool support.
 
 This means that a function is something that can be assigned to a variable, passed as an argument, and have properties or methods attached to it. 
 
-ES% introduced Arrow Function Expressions which provide a new syntax for defining a function. In addition to a more compact syntax, functions declared this way have a key difference allowing more intuitive execution scoping.
+ES5 introduced Arrow Function Expressions which provide a new syntax for defining a function. In addition to a more compact syntax, functions declared this way have a key difference allowing more intuitive execution scoping.
 
 ## The Old Way
 ```javascript
@@ -19,10 +19,10 @@ ES% introduced Arrow Function Expressions which provide a new syntax for definin
 
 ## Why are Arrow Functions Needed?
 
-1. It saves some typing, thereby reducing the chance of carpal tunnel.
+1. It saves some typing, thereby reducing the chance of carpal tunnel :D 
 2. It changes the way the execution context for the function is determined in a way that makes it more intuitive.
 
-In Javascript the execution scope for a function is determined at the time the function is executed and it changes depending on how the functions is invoked.
+For traditional functions the execution scope for a function is determined at the time the function is executed and it changes depending on how the functions is invoked.
 
 This results in an *interesting* behavior surrounding the ```this``` keyword because it always refers to the execution context of the function.
 
@@ -70,7 +70,7 @@ var obj = {
   showCount: function () {
     out(this.count);
   },
-  addBtns: function () {
+  addBtns() {
     button("+", function () {
       this.count++;
       this.showCount();
