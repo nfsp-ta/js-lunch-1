@@ -90,9 +90,6 @@ const notTooBad = `She said: "Isn't it a nice day!"`;
     }
     ```
 
-## Where will I see this?
-Because of the numerous advantages, Template Literals are very common in modern JavaScript. 
-
 ## Potential Pitfalls
 Pretty indentation in the code doesn't produce pretty indentation in the strings.
 
