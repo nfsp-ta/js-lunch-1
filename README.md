@@ -26,6 +26,9 @@ To that end, here are references to some of the source material used in putting 
 
 ### Arrow Functions
 
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+- https://codeburst.io/all-about-this-and-new-keywords-in-javascript-38039f71780c
+- https://dmitripavlutin.com/gentle-explanation-of-this-in-javascript/
 
 ### Template Literals
 
