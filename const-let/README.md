@@ -17,12 +17,10 @@ Traditionally JS allowed two ways of declaring variables
   var x = 1;
   ```
 
-## Why are `const` and `let` needed?
+## The New Way & Why `const` and `let` are needed
 
 `var`s are scoped to the containing function _NOT_ the enclosing block. At best, this is confusing; at worst, it can cause bugs.
 The scoping rules of `var` are non-intuitive to developers because most languages support block scoping and do not implicitly hoist the variables. Additionally, `var` can be redeclared without raising an error, which could lead to all sorts of weirdness.
-
-## The New Way
 
 Unlike `var` assignment, both `let` and `const` are lexically and block scoped.
 
@@ -59,10 +57,6 @@ function test() {
   var someRandomThing = ""; // ...as long as this is here
 }
 ```
-
-## Where will I see this?
-
-- Ideally, every time a variable is declared anywhere in javascript. (Down with `var`!)
 
 ## Potential Pitfalls
 
