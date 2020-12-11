@@ -1,23 +1,29 @@
 // old way
 
 function myFunction () {
-    out('inside MyFunction')
+  out('inside MyFunction');
 }
 
 myFunction()
 
+// Or as an anonymous function assigned to a variable:
+
+const myFunction = function() {
+  out('inside myFunction');
+}
+
 // execution context
 
 function myFunction() {
-    out(this)
-  }
-  
-  var o = { f: myFunction }
-  
-  myFunction()
-  o.myFunction()
+  out(this)
+}
 
-// Arror Function Expressions
+var o = { f: myFunction }
+
+myFunction()
+o.myFunction()
+
+// Arrow Function Expressions
 
   // the arrow function is being declared in the global scope
   let f = () => { out(this) }
@@ -51,7 +57,7 @@ function myFunction() {
     showCount: function () {
       out(this.count);
     },
-    addBtns() {
+    addBtns: function () {
       button("+", function () {
         this.count++;
         this.showCount();
