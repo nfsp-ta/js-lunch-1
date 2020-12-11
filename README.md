@@ -1,29 +1,32 @@
 # JavaScript Lunch &amp; Learn -  Part 1
 
-## Agenda
-- Introduction ~2 minutes
-- 6 Topics ~8 minutes each (~48 minutes total)
-- Open Discussion ~10 minutes
+This repository contains the outlines and code samples that Omar and Ashley used for the 12/11/2020 Lunch & Learn on Modern JavaScript
 
-## Disclaimers
-- We will be moving very quickly, each topic could probably be its own L&L. Feel free to contact Omar or Ashley after the L&L with more questions.
-- JavaScript is a spec, and implementations vary (per browser, node, etc...)
-- Currently, it's very common for JavaScript to be transpiled (think Babel, TypeScript) or use a bundler like Webpack; for the most part, we're going to ignore this unless it specifically applies to a particular topic.
-- For the most part, we'll be presenting code that is as implementation agnostic as possible, but there are always subtle differences.
+While 6 topics were originally planned, time only allowed for the first 3 to be covered, thus the remaining material is being moved out to 'Part 2'
 
-## Topics
+## Topics Covered
+
 - [`const`/`let` vs. `var`](const-let/README.md)
 - [Arrow Functions](arrow-functions/README.md)
 - [Template Literals](template-literals/README.md)
-- [Object Destructuring | Rest/Spread](object-destructuring-rest-spread/README.md)
-- [JS modules](js-modules/README.md)
-- [Default Parameters](default-parameters/README.md)
 
-## Discussion Format
-- Intro
-- The Old Way
-- The New Way & Why it is Needed
-- Is there an equivalent in C#/Java?
-- Demo
-- Potential Pitfalls
-- Q & A
+## Source Material / More Information
+
+The Lunch & Learn was designed as a quick intro and overview of the topics.
+But time is a major limiting factor.
+Thus the goal is for everyone to do their own research and explore these very interesting and useful topics.
+To that end, here are references to some of the source material used in putting together the presentation, along with highly recommended extra material.
+
+### `const`/`let` vs. `var`
+
+- https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/
+- https://medium.com/datadriveninvestor/let-vs-var-a-simple-answer-3cf8c941f4e4
+- https://davidwalsh.name/for-and-against-let
+- https://javascript.info/var
+
+### Arrow Functions
+
+
+### Template Literals
+
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
