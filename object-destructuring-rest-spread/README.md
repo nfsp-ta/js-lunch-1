@@ -21,7 +21,7 @@ var rest = a.slice(2)
 
 ```
 ## Why is Object Destructuring Needed?
-Object destructing provides no performance benefit over traditional variable assignment but it aids readability by being more concise.
+Object destructing provides no performance benefit over traditional variable assignment but it aids readability by being more concise. It makes writing code using immutable structures much easier since it creates a new object without modifying the original.
 
 ## The New Way
 ```javascript
@@ -36,19 +36,16 @@ displayPerson({ name, id }) {
 var person = { name: 'Omar': id: 42 }
 displayPerson(person)
 
-// for arrays desstructuring is positional so 
+// for arrays destructuring is positional so 
 
 var a = [1,2,3,4,5,6,7]
-const { first, second, ...rest } = a
-
-
-
+const [ first, second, ...rest ] = a
 
 ```
 ## Is there an equivalent in C#/Java?
 * C# 
 
-C# has no direct equivalent but tuples exhibit behavior which is similar with a caveat that tuples follow the array behavior where values are positional rather than based on names
+C# has no direct equivalent for destructuring but tuples exhibit behavior which is similar with a caveat that tuples follow the array behavior where values are positional rather than based on names
 
 ```c#
 var payLoad = (
@@ -65,15 +62,16 @@ var (username, password, _, _) = payLoad;
 Console.WriteLine($"Username: {username} and Password: {password}"); 
 ```
 
+C# also supports the `params` keyword in function declarations which acts like the rest operator collecting multiple parameters into a single array parameter.
 
 ## Demo
 
 
 ## Where will I see this?
-The use of object destructuring is widespread, its widely used for import statements, and libraries such as react which encourage passing data through many levels can benefit quite a lot from this both for conciseness and also for reduced code churn when new values are introduced.
+The use of object destructuring is widespread, its widely used for import statements, and libraries such as react which encourage passing data through many levels can benefit quite a lot from this both for conciseness and also for reduced code churn when new values are introduced. Using a local state store such as redux also require that we write prue functions so the spread operator makes this much simpler.
 
 
 ## Potential Pitfalls
-
+spreading an object or array is a shallow copy, 
 
 ## Q & A
