@@ -31,6 +31,8 @@ JavaScript's module system is different enough from other languages that it does
 ## Demo
 
 (Show in code sandbox)
+- Named exports
+- Default exports (demo.js)
 
 ## Potential Pitfalls
 
