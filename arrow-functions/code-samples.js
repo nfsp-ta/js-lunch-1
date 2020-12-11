@@ -34,6 +34,18 @@ function myFunction() {
 
   // code example
 
+  function Person(name) {
+    this.name = name;
+    this.display = function() {
+      out(this.name || 'no name')
+    }
+  }
+  
+  const person = new Person('omar')
+  person.display()
+  
+  window.setTimeout(person.display);
+
   var obj = {
     count: 0,
     showCount: function () {
