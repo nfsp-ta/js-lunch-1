@@ -16,7 +16,7 @@ displayPerson(person)
 var a = [1,2,3,4,5,6,7]
 
 var first = a[0]
-var first = a[1]
+var second = a[1]
 var rest = a.slice(2)
 
 ```

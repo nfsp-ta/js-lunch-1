@@ -10,7 +10,7 @@ const updatedBlog = {
 
 /// ------------------------------
 
-var jayz = {
+var someObject = {
     id: 41,
     name: 'Smithy Smith Smithers',
     address: {
@@ -18,12 +18,18 @@ var jayz = {
         city: 'Whoville',
         state: 'Wonder' 
     },
-}
-
-
-var me = {
+  }
+  
+  
+  var objectCopy = {
     ...someObject
-}
+  }
+  out(objectCopy)
+  out(objectCopy === someObject)
+  
+  out(JSON.stringify(objectCopy) === JSON.stringify(someObject))
+  
+  out(objectCopy.address === someObject.address)
 
 //-----------------------
 
@@ -31,7 +37,7 @@ var list = [1,2,3,4,5,6,7,8,9]
 
 var shorterList = list.splice(5, 1);
 
-console.log(list)
+out(list)
 
 
 var list = [1,2,3,4,5,6,7,8,9]
@@ -43,21 +49,20 @@ for(var i = 0; i < list.length; i++) {
     }
 }
 
-console.log(oldSchoolCopy)
+out(oldSchoolCopy)
 
-var shorterList = list.slice(5);
-var shorterList2 = list.slice(0, 4);
-
-console.log(shorterList)
-console.log(shorterList2)
+var shorterList = list.slice(0, 5);
+var shorterList2 = list.slice(6);
 
 var combinedList = shorterList.concat(shorterList2)
-console.log(combinedList)
+out(combinedList)
 
 var easierShortList = [
-    ...list.slice(5),
-    ...list.slice(0, 4)
+...list.slice(0, 5),
+...list.slice(6)
 ]
+  
+out(easierShortList)
 
 // -------------------------
 
@@ -69,10 +74,10 @@ const numbers = [5, 10]
 multiply(...numbers)
 // -------------------------
 
-function consoleLogOld() {
+function printf() {
     if(arguments.length === 0) return
     if(arguments.length === 1) {
-        console.log(arguments[0])
+        out(arguments[0])
         return
     }
 
@@ -94,24 +99,24 @@ function consoleLogOld() {
             return acc + str
         }, firstSegment)
 
-    console.log(message)
+    out(message)
 }
 const strings = ['Hello', 'Rest', 'Spread']
-consoleLogOld('1: %s 2: %s 3: %s', ...strings)
+printf('1: %s 2: %s 3: %s', ...strings)
 
-var consoleLog = (formatString, ...args) => {
-    if(formatString != null) return
+var printfNew = (formatString, ...args) => {
+    if(formatString == null) return
     if(args.length === 0) {
-        console.log(formatString)
+        out(formatString)
     }
-
+  
     const [firstSegment, ...remainder]= formatString.split('%s')
     
     const message = remainder
         .reduce((acc, str, index) => 
             acc + (index < args.length ? args[index] : '') + str, firstSegment)
     
-    console.log(message)
-}
-const strings = ['Hello', 'Rest', 'Spread']
-consoleLog('%s %s %s', ...strings)
+    out(message)
+  }
+  const strings = ['Hello', 'Rest', 'Spread']
+  printfNew('1: %s 2: %s 3: %s', ...strings)
