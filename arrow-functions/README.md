@@ -9,11 +9,15 @@ ES5 introduced Arrow Function Expressions which provide a new syntax for definin
 ## The Old Way
 ```javascript
 
-  function myFunction () {
-    out('inside MyFunction')
+  function myNamedFunction () {
+    out('inside MyNamedFunction')
   }
+  myNamedFunction()
 
-  myFunction()
+  var myAnonFunction = function() {
+        out('inside MyAnonFunction')
+  }
+  myAnonFunction()
 ```
 
 
@@ -78,10 +82,6 @@ var obj = {
     button("-", function () {
       this.count--;
       this.showCount();
-    });
-    button("broken", function () {
-      const showCount = this.showCount()
-      showCount();
     });
   }
 };
